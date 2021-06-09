@@ -7,7 +7,7 @@ defmodule UniqCompat.MixProject do
       description: "An :elixir_uuid compatibility layer for :uniq",
       package: package(),
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       source_url: "https://github.com/bitwalker/uniq_compat",
