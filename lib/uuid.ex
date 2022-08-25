@@ -8,7 +8,7 @@ defmodule UUID do
 
   def info!(uuid), do: Uniq.UUID.info!(uuid, :keyword)
 
-  defdelegate binary_to_string(uuid), to: Uniq.UUID, as: :to_string
+  defdelegate binary_to_string!(uuid, format \\ :default), to: Uniq.UUID, as: :to_string
 
   defdelegate string_to_binary!(uuid), to: Uniq.UUID
 
