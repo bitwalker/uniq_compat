@@ -6,7 +6,7 @@ defmodule UniqCompat.MixProject do
       app: :elixir_uuid,
       description: "An :elixir_uuid compatibility layer for :uniq",
       package: package(),
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -29,7 +29,7 @@ defmodule UniqCompat.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:uniq, "~> 0.3"},
+      {:uniq, "~> 0.5"},
       {:ex_doc, "> 0.0.0", only: [:docs], runtime: false}
     ]
   end
